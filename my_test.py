@@ -38,9 +38,9 @@ def prepare_data(pythondata):
         value_row=[]
         for j in range(max_col+1):
             if(value_data[k]=='yes'):
-                labels.append(1)
-            elif(value_data[k]=='no'):
                 labels.append(0)
+            elif(value_data[k]=='no'):
+                labels.append(1)
             elif(value_data[k]==''):
                 pass
             else:
